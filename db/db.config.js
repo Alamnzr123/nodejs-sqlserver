@@ -1,15 +1,16 @@
 const { Sequelize } = require('sequelize')
+require("dotenv").config();
 
-const sequelize = new Sequelize('test2-nodejs', 'root', 'sa', {
-    host: 'localhost',
+const sequelize = new Sequelize(process.env.DB, process.env.USER_DB, process.env.PASSWORD_DB, {
+    host: process.env.HOST,
     dialect: 'mssql',
     logging: false,
-    port: 1434,
-    // pool: {
-    //     max: 5,
-    //     min: 0,
-    //     idle: 10000
-    // },
+    port: process.env.PORT_DB,
+    pool: {
+        max: 5,
+        min: 0,
+        idle: 10000
+    },
     // dialectOptions: {
     //     instanceName: 'localhost',
     //     domain: 'localhost'

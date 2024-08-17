@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "9bf25171-a75d-471e-b924-a671c1856188",
+		"name": "Nodejs-SQL Server_2",
+		"description": "Github Repo : [https://github.com/Alamnzr123/nodejs-sqlserver](https://github.com/Alamnzr123/nodejs-sqlserver)\n\nReference : [https://wajihaabid.medium.com/basic-nodejs-server-crud-application-e81d4a0cc190](https://wajihaabid.medium.com/basic-nodejs-server-crud-application-e81d4a0cc190)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15530359"
+	},
+	"item": [
+		{
+			"name": "GET ALL DATA",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/book",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST DATA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"book-4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/book",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ID DATA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/book/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE DATA",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"book-1-edit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/book/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ID DATA",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3003/book/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

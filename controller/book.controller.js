@@ -1,4 +1,4 @@
-const { bookModel } = require("../model/book.model")
+const bookModel = require("../model/book.model")
 let errCode = 500
 
 //add new book
