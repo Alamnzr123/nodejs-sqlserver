@@ -26,4 +26,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## NOTES
 
-Error When Connected To Database Microsoft SQL Server
+This Project same as this Repo **https://github.com/Alamnzr123/nodejs-sqlserver**
+Only Code the Different
